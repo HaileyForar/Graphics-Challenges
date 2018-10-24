@@ -12,7 +12,7 @@ public class GraphicsChallenge8 extends Canvas
     		{
 	        GraphicsChallenge8 canvas = new GraphicsChallenge8();
 	        JFrame frame = new JFrame();
-	        frame.setSize(800, 400);
+	        frame.setSize(400, 400);
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.getContentPane().add(canvas).setBackground(Color.black);
 	        frame.setLocationRelativeTo(null); //Sets JPanel to center of screen 
@@ -23,24 +23,16 @@ public class GraphicsChallenge8 extends Canvas
     	public void paint(Graphics graphics) 
     		{
     		
-	        graphics.setColor(Color.pink);
-	        graphics.fillOval(0, 0, 200, 100);
-	        
-	        graphics.setColor(Color.pink);
-	        graphics.fillRect(795, 395, 200, 100);
-	        
-	        graphics.setColor(Color.white);
-	        graphics.drawLine(40, 30, 330, 380);
-	        
-	        for (int i = 0; i < 350; i++)
+	        for (int i = 0; i < 400; i++)
 	        	{
-		        graphics.setColor(Color.green);
-		        graphics.fillRect(300, i, 50, 50);
+		        graphics.setColor(Color.magenta);
+		        graphics.fillRect(i, i, 20, 20);
 		        
 		        delay();
 		        
 		        graphics.setColor(Color.black);
-		        graphics.fillRect(300, i, 50, 50);
+		        graphics.fillRect(i, i, 20, 20);
+		        
 	        	}
     		}
     	

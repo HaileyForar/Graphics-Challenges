@@ -25,7 +25,7 @@ public class GraphicsChallenge6 extends Canvas
     		{
     			 System.out.println("Would you like to make a small square, or a big square, and would you like it to be red or blue?.");
     			 System.out.println("1 = Small and Red -- 2 = Big and Red -- 3 = Small and Blue -- 4 = Big and Blue");
-    			 System.out.println("(Please enter in 1 or 2 with the corresponding letter for the color that you want your square to be.)");
+    			 System.out.println("(Please enter in 1 or 2 with the corresponding letter for the color that you want your square to be, and then press Enter.)");
 				 Scanner userInput1 = new Scanner(System.in);
 				int numberInserted = userInput1.nextInt();
 				String letterInserted = userInput1.nextLine();
