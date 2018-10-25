@@ -24,22 +24,19 @@ public class GraphicsChallenge7 extends Canvas
     	public void paint(Graphics graphics) 
     		{
     			
-    			for(int i = 0; i < 255; i++)
+    			for(int R = 0; R < 255; R++)
 					{
-						graphics.setColor(new Color(i));
-						graphics.fillRect(50, 40, 100, 100);
+						for(int G = 0; G < 255; G++)
+							{
+								for(int B = 0; B < 255; B++)
+									{
+										graphics.setColor(new Color(R, G, B));
+										graphics.fillRect(50, 40, 100, 100);
+										repaint();
+									}
+							}
 		            }
     			
-    			for(int i = 0; i < 255; i++)
-    				{
-    					graphics.setColor(new Color(i));
-    					graphics.fillRect(50, 40, 100, 100);
-    				}
     			
-    			for(int i = 0; i < 255; i++)
-    				{
-    					graphics.setColor(new Color(i));
-    					graphics.fillRect(50, 40, 100, 100);
-    				}
     		}
 	}
