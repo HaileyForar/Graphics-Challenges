@@ -30,24 +30,17 @@ public class GraphicsChallenge9 extends Canvas
 		        
 	        	}
     		}
+	
     	
-    		public void animation()
+    		public void moveBox(int dx, int dy)
     			{
-    				int x = 600;
-    		        int y = 250;
-    		        int mx = 2;
-    		        int my = 4;
-    	       
-    				if(x + mx > frame || x + mx < 0)
+    				int xLeft =
+						0;
+					if(xLeft < 0 || xLeft > 400)
     					{
-    						System.out.println(mx = -mx);
+    						dx = -dx;
     					}
-    				if(y + my > frame || y + my < 0)
-    					{
-    						System.out.println(my = -my);
-    					}
-    				x += mx;
-    				y += my;
+    				xLeft = xLeft + dx;
     				
     			}
     	}
